@@ -4,23 +4,16 @@
     </head>
     <body>
         <div>
-            <h1><a href="/">Ayana's Blog</a></h1>
+            <h2><a href="/">Ayana's Blog</a></h2>
         </div>
-        <ul>
-            <li>
         <div>
-            <h3><a href="">My first post</a></h3>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p>published: 6.11.2020, 12:14</p>
+            {% for post in posts %}
+                <div>
+                    <p>published: {{ post.published_date }}</p>
+                    <h2><a href="">{{ post.title }}</a></h2>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
         </div>
-            </li>
-            <li>
-        <div>
-            <h3><a href="">My second post</a></h3>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-            <p>published: 11.11.2020, 13:37</p>
-        </div>
-            </li>
-        </ul>
     </body>
 </html>
