@@ -1,0 +1,54 @@
+.page-header {
+    background-color: #B1D8FA;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Big Shoulders Stencil Text';
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    background-color: #ffffff;
+    margin-bottom: 50px;
+    font-family: 'Xanh Mono', monospace;
+    font-size: medium;
+}
+
+.post h2 a, .post h2 a:visited {
+    color: #E277D4;
+}
+
+body {
+    background-image: url("fon.jpg");
+    background-color: #cccccc;
+}
